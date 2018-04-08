@@ -1,0 +1,22 @@
+[package]
+name = "cmark"
+version = "0.0.1"
+authors = ["FuGangqiang <fu_gangqiang@qq.com>"]
+description = "CommonMark to html converter."
+repository = "https://github.com/FuGangqiang/cmark.rs"
+homepage = "https://github.com/FuGangqiang/cmark.rs"
+documentation = "https://docs.rs/cmark"
+keywords = ["markdown", "CommonMark"]
+categories = ["command-line-utilities"]
+license = "MIT"
+readme = "README.md"
+
+[[bin]]
+name = "cmark"
+doc = false
+
+[dependencies]
+log = "0.4"
+env_logger = "0.5"
+structopt = "0.2"
+pulldown-cmark = "0.1"
