@@ -1,6 +1,6 @@
 [package]
 name = "cmark"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["FuGangqiang <fu_gangqiang@qq.com>"]
 description = "CommonMark to html converter."
 repository = "https://github.com/FuGangqiang/cmark.rs"
