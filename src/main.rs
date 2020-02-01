@@ -1,6 +1,5 @@
 extern crate log;
 extern crate env_logger;
-#[macro_use]
 extern crate structopt;
 extern crate pulldown_cmark;
 
@@ -10,7 +9,7 @@ use std::io::{Result, Write};
 use std::fs::File;
 use std::path::{Path, PathBuf};
 use structopt::StructOpt;
-use pulldown_cmark::{Options, Parser, OPTION_ENABLE_TABLES};
+use pulldown_cmark::{Options, Parser};
 use pulldown_cmark::html::push_html;
 
 
@@ -61,7 +60,7 @@ fn main() {
   <body>"#);
 
     let mut parser_opts = Options::empty();
-    parser_opts.insert(OPTION_ENABLE_TABLES);
+    parser_opts.insert(Options::ENABLE_TABLES);
     let parser = Parser::new_ext(markdown, parser_opts);
     push_html(&mut html, parser);
 

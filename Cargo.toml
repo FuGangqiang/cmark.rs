@@ -17,6 +17,6 @@ doc = false
 
 [dependencies]
 log = "0.4"
-env_logger = "0.5"
-structopt = "0.2"
-pulldown-cmark = "0.1"
+env_logger = "0.7"
+structopt = "0.3"
+pulldown-cmark = "0.6"
